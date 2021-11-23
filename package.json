@@ -26,10 +26,10 @@
     "react-mapbox-gl-draw": "^2.0.4",
     "react-redux": "^7.2.6",
     "react-toastify": "^8.1.0",
-    "worker-loader": "^3.0.8"
+    "worker-loader": "^3.0.8",
+    "react-scripts": "^4.0.3"
   },
   "devDependencies": {
-    "react-scripts": "^4.0.3",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
