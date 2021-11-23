@@ -16,23 +16,22 @@ A simple web app made for The Center for Global Environmental Education at Hamli
 
 #### Select features
 
-- Coordinates: These define the bounding box of tiles you will download.
-- Tile Size: The tiles can be 256, 512, or 1024 pixels
-- Style: These are the map styles provided by mapbox.
+- The coordinates define the bounding box of tiles you will download.
+- The tiles size can be 256, 512, or 1024 pixels
+- Select a style from the map styles provided by mapbox.
 
 ![](resources/select-features.gif)
 
 #### Download Tiles
 
-- Use caution - confirm you are downloading the correct number of files.
+- Use caution and confirm you are downloading the correct number of files.
 
 ![](resources/download-tiles.gif)
 
 
 ### API Documentation
 
-This app uses the mapbox static tiles api - https://docs.mapbox.com/api/maps/static-tiles/ 
-
+This app uses the mapbox static tiles api - https://docs.mapbox.com/api/maps/static-tiles/
 
 ### Local Development
 
@@ -46,7 +45,7 @@ yarn
 yarn start
 ```
 
-### Contribution
+### Contributions
 
 Found a bug or want more features? Create an issue or make a PR.
 
