@@ -1,5 +1,22 @@
 # Static MapTile Downloader
 
-A public web app made for The Center for Global Environmental Education at Hamline University 
+https://nicklpeterson.github.io/mapbox-tiles/
 
-Readme details coming soon
+A public web app made for The Center for Global Environmental Education at Hamline University.
+
+### How to Use
+
+
+
+### Local Development
+
+- Install Dependencies:
+```
+yarn
+```
+
+- Run locally on port 3000:
+```
+yarn start
+```
+

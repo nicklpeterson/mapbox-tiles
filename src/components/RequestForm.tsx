@@ -2,13 +2,10 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Slider from '@mui/material/Slider';
-import {Typography} from "@mui/material";
-import Button from '@material-ui/core/Button';
+import { Button, Select, MenuItem, Typography } from "@mui/material";
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-import {GpsCoordinate} from "../utils/Coordinates";
-import Select from "@mui/material/Select";
-import MenuItem from "@mui/material/MenuItem";
-import {useDispatch, useSelector} from "react-redux";
+import { GpsCoordinate } from "../utils/Coordinates";
+import { useDispatch, useSelector } from "react-redux";
 import {
     loadingSelector,
     lowerRightCoordinateSelector,
@@ -16,7 +13,8 @@ import {
     setMapStyle, setPixels, setUpperLeftCoordinate, setZoomLevel, TileSize,
     upperLeftCoordinateSelector, zoomSelector
 } from "../store/formSlice";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
+
 
 const DECIMAL_PLACES = 5
 
@@ -111,7 +109,6 @@ export default function RequestForm({onSubmit}: formProps) {
             <Box
                 component="form"
                 sx={{
-                    width: "96vw",
                     '& > :not(style)': {m: 1, width: '30ch'},
                 }}
                 noValidate
@@ -187,7 +184,7 @@ export default function RequestForm({onSubmit}: formProps) {
                 color="primary"
                 startIcon={<CloudDownloadIcon/>}
                 onClick={onSubmit}
-                style={{marginTop: '45px', marginBottom: '100px'}}
+                style={{marginTop: '45px', marginBottom: '100px', marginRight: "90px"}}
                 disabled={
                     isLoading ||
                     !validatePixels(pixels) ||

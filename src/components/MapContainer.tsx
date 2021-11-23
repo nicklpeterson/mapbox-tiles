@@ -1,4 +1,5 @@
 import { GpsCoordinate } from "../utils/Coordinates";
+import mapboxgl from "mapbox-gl";
 import ReactMapboxGl from "react-mapbox-gl";
 import DrawControl from 'react-mapbox-gl-draw';
 import '@mapbox/mapbox-gl-draw/dist/mapbox-gl-draw.css';
@@ -10,6 +11,13 @@ import { mapStyleSelector, zoomSelector } from "../store/formSlice";
 import { useEffect, useRef } from "react";
 import { setLowerRightCoordinate, setUpperLeftCoordinate } from "../store/formSlice";
 import { TxCenter, TxRectMode } from 'mapbox-gl-draw-rotate-scale-rect-mode'
+
+/**
+ * This is a workaround for the issue: https://github.com/mapbox/mapbox-gl-js/issues/10173
+ */
+// @ts-ignore
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 // Minneapolis / St. Paul
 const INITIAL_COORDINATES: [number, number] = [-93.16534986838542, 44.96687220057306]
