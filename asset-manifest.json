@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mapbox-tiles/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/mapbox-tiles/static/js/main.f7e3390c.chunk.js",
-    "main.js.map": "/mapbox-tiles/static/js/main.f7e3390c.chunk.js.map",
+    "main.js": "/mapbox-tiles/static/js/main.bc758b30.chunk.js",
+    "main.js.map": "/mapbox-tiles/static/js/main.bc758b30.chunk.js.map",
     "runtime-main.js": "/mapbox-tiles/static/js/runtime-main.b96b70ed.js",
     "runtime-main.js.map": "/mapbox-tiles/static/js/runtime-main.b96b70ed.js.map",
     "static/css/2.3685f014.chunk.css": "/mapbox-tiles/static/css/2.3685f014.chunk.css",
@@ -22,6 +22,6 @@
     "static/css/2.3685f014.chunk.css",
     "static/js/2.33a87477.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.f7e3390c.chunk.js"
+    "static/js/main.bc758b30.chunk.js"
   ]
 }
