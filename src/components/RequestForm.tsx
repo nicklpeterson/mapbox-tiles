@@ -184,7 +184,7 @@ export default function RequestForm({onSubmit}: formProps) {
                 color="primary"
                 startIcon={<CloudDownloadIcon/>}
                 onClick={onSubmit}
-                style={{marginTop: '45px', marginBottom: '100px', marginRight: "90px"}}
+                style={{marginTop: '45px', marginBottom: '100px'}}
                 disabled={
                     isLoading ||
                     !validatePixels(pixels) ||
