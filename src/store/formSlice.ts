@@ -35,8 +35,13 @@ const BASE_MAPBOX_URL = process.env.REACT_APP_BASE_MAPBOX_URL
 const MAPBOX_ACCESS_TOKEN = process.env.REACT_APP_MAPBOX_API_ACCESS_TOKEN
 const FETCH_TILES_ACTION = 'form/fetchTiles'
 
-const getUrl = (style: StyleId, pixels: number, zoom: ZoomLevel, tile: SlippyMapCoordinate) =>
-    `${BASE_MAPBOX_URL}/${style}/tiles/${pixels}/${zoom}/${tile.x}/${tile.y}?access_token=${MAPBOX_ACCESS_TOKEN}`
+const getUrl = (style: StyleId, pixels: number, zoom: ZoomLevel, tile: SlippyMapCoordinate) => {
+    if (pixels === 256 || pixels === 512) {
+        return `${BASE_MAPBOX_URL}/${style}/tiles/${pixels}/${zoom}/${tile.x}/${tile.y}?access_token=${MAPBOX_ACCESS_TOKEN}`
+    } else {
+        return `${BASE_MAPBOX_URL}/${style}/tiles/512/${zoom}/${tile.x}/${tile.y}@2x?access_token=${MAPBOX_ACCESS_TOKEN}`
+    }
+}
 
 export const fetchTiles = createAsyncThunk(
     FETCH_TILES_ACTION,
@@ -64,7 +69,10 @@ export const fetchTiles = createAsyncThunk(
                     })
                 })
             }))
-        results.forEach((result) => console.log(result) )
+        results.forEach((result) => {
+            // TODO: Display error if some requests are not resolved
+            console.log(result)
+        })
         thunkAPI.dispatch(setLoadingToFalse())
         return results
     }
