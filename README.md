@@ -6,6 +6,9 @@ A public web app made for The Center for Global Environmental Education at Hamli
 
 ### How to Use
 
+#### Select an area of map tiles
+
+![](resources/select-area.gif)
 
 
 ### Local Development
