@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/mapbox-tiles/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/mapbox-tiles/static/js/main.a140decd.chunk.js",
+    "main.js.map": "/mapbox-tiles/static/js/main.a140decd.chunk.js.map",
+    "runtime-main.js": "/mapbox-tiles/static/js/runtime-main.ce5483dd.js",
+    "runtime-main.js.map": "/mapbox-tiles/static/js/runtime-main.ce5483dd.js.map",
+    "static/css/2.6619ae0d.chunk.css": "/mapbox-tiles/static/css/2.6619ae0d.chunk.css",
+    "static/js/2.001fe70c.chunk.js": "/mapbox-tiles/static/js/2.001fe70c.chunk.js",
+    "static/js/2.001fe70c.chunk.js.map": "/mapbox-tiles/static/js/2.001fe70c.chunk.js.map",
+    "static/js/3.8cb8b639.chunk.js": "/mapbox-tiles/static/js/3.8cb8b639.chunk.js",
+    "static/js/3.8cb8b639.chunk.js.map": "/mapbox-tiles/static/js/3.8cb8b639.chunk.js.map",
+    "index.html": "/mapbox-tiles/index.html",
+    "static/css/2.6619ae0d.chunk.css.map": "/mapbox-tiles/static/css/2.6619ae0d.chunk.css.map",
+    "static/css/main.8c8b27cf.chunk.css.map": "/mapbox-tiles/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.001fe70c.chunk.js.LICENSE.txt": "/mapbox-tiles/static/js/2.001fe70c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ce5483dd.js",
+    "static/css/2.6619ae0d.chunk.css",
+    "static/js/2.001fe70c.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.a140decd.chunk.js"
+  ]
+}
