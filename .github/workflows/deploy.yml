@@ -19,6 +19,9 @@ jobs:
         run: |
           npm install
           npm run-script build
+        env:
+          REACT_APP_MAPBOX_API_ACCESS_TOKEN: ${{ secrets.REACT_APP_MAPBOX_API_ACCESS_TOKEN }}
+          REACT_APP_BASE_MAPBOX_URL: ${{ secrets.REACT_APP_BASE_MAPBOX_URL }}
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.5
