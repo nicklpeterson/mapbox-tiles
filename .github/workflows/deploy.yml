@@ -15,8 +15,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Install and Build
+        run: |
+          npm install
+          npm run-script build
 
       - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages
+          folder: dist
         run: npm run deploy
