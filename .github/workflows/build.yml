@@ -32,7 +32,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Install Dependencies
         run: yarn
-        
-      - name: Deploy
-        run: yarn deploy
       
