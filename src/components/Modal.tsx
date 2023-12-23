@@ -14,8 +14,6 @@ export type ModalProps = {
 }
 
 export default function Modal({open, onContinue, onDecline, text}: ModalProps) {
-
-
     return (
         <div>
             <Dialog
